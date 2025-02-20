@@ -9,11 +9,10 @@
 <template>
     <div class="hero">
         <label class="hero-header">Hello, I'm <label style="font-weight: bold;">Henrik</label></label>
-        <label>Programming student at LiU</label>
+        <label>A programming student at LiU</label>
         <div class="about">
             <div class="temp">
                 <Map stroke-width="1.5"/>
-                <!-- <img src="../public/icons/map-pin.svg"> -->
                 <p>Linköping, Sweden</p>
             </div>
             <div class="socials">

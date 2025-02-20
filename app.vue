@@ -82,7 +82,7 @@ h1{
   );
 }
 main {
-  max-width: 1280px;
+  width: 1000px;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -91,6 +91,11 @@ main {
   gap:80px;
   padding: 0 10px 0 10px;
   transition:all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 1280px) {
+  main{
+    width:auto;
+  }
 }
 @media only screen and (max-width: 800px) {
   .techniques-container {

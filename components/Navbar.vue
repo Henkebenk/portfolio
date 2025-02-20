@@ -16,7 +16,7 @@
         display:flex;
         justify-content: center;
         position: fixed;
-        padding:10px;
+        padding:10px 0 0 0;
         top:-100px;
         transition: all 0.5s ease-in-out;
     }
@@ -35,9 +35,10 @@
         background-color: rgba(0, 0, 0, 0.788);
         display:flex;
         justify-content: space-evenly;
-        flex-grow: 1;
+        /* flex-grow: 1; */
+        gap:16px;
         max-width: 400px;
-        padding:10px;
+        padding:8px 36px;
         border-radius: 24px;
         backdrop-filter: blur(20px);
         box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;

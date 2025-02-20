@@ -3,7 +3,7 @@
         <h1>Projects</h1>
         <div class="projects-container">
             <div class="project">
-                <img src="../public/images/9.jpg" class="project-image-large">
+                <img src="../public/projects/gearguard_large.png" class="project-image-large">
                 <div class="project-data">
                     <div>
                         <img src="../public/projects/gearguard.svg" class="project-image-small">
@@ -11,33 +11,23 @@
                     <label>Gearguard</label>
                 </div>
             </div>
-            <div class="project">
+            <!-- <div class="project">
+                <img src="../public/images/9.jpg" class="project-image-large">
                 <div class="project-data">
-                    <label>Bytegrave</label>
-                    <!-- <div class="chips">
-                        <label class="chip">C++</label>
-                        <label class="chip">sfml</label>
-                        <label class="chip">Doxygen</label>
-                    </div> -->
+                    <div>
+                        <img src="../public/projects/chatapp.png" class="project-image-small">
+                    </div>
+                    <label>ChatApp</label>
                 </div>
-            </div>
+            </div> -->
             <div class="project">
-                <label>Hello</label>
-            </div>
-            <div class="project">
-                <label>Hello</label>
-            </div>
-            <div class="project">
-                <label>Hello</label>
-            </div>
-            <div class="project">
-                <label>Hello</label>
-            </div>
-            <div class="project">
-                <label>Hello</label>
-            </div>
-            <div class="project">
-                <label>Hello</label>
+                <img src="../public/projects/flowtrails_large.png" class="project-image-large">
+                <div class="project-data">
+                    <div>
+                        <img src="../public/projects/flowtrails.svg" class="project-image-small">
+                    </div>
+                    <label>FlowTrails</label>
+                </div>
             </div>
         </div>
     </div>
@@ -62,7 +52,7 @@
         display:flex;
         flex-direction: column;
         gap:8px;
-        }
+    }
     .projects-container {
         display:grid;
         grid-template-columns: repeat(3, 1fr);
@@ -81,16 +71,19 @@
     .project-image-large{
         height:100%;
         width:100%;
-        object-fit: cover;
+        filter: blur(2px);
+        object-fit:cover;
         position:absolute;
-        top:0;
+        transform: scale(1.1);  
+        opacity: 0.75;
+        /* top:0; */
     }
     .project-image-small {
         width:32px;
         height:32px;
     }
     .project {
-        background-color: rgb(247, 247, 247);
+        background-color: rgb(0, 0, 0);
         height: 100px;
         overflow:hidden;
         /* padding:10px; */
