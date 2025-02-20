@@ -3,8 +3,11 @@
         <h1>Projects</h1>
         <div class="projects-container">
             <div class="project">
+                <img src="../public/images/9.jpg" class="project-image-large">
                 <div class="project-data">
-                    <img src="../public/images/9.jpg">
+                    <div>
+                        <img src="../public/projects/gearguard.svg" class="project-image-small">
+                    </div>
                     <label>Gearguard</label>
                 </div>
             </div>
@@ -40,7 +43,7 @@
     </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="css">
     .chips {
         display:flex;
         flex-direction: row;
@@ -66,28 +69,34 @@
         gap: 10px;
     }
     .project-data {
-        height:100px;
-        position:absolute;
-        bottom:8px;
-        left:8px;
-        /* font-weight: bold; */
-        display:flex;
-        flex-direction:row;
-        /* justify-content: end; */
+        padding:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        flex-grow: 1;
         gap:4px;
     }
-    .project-data img{
+    .project-image-large{
         height:100%;
-        width:100px;
+        width:100%;
         object-fit: cover;
-        border-radius: 8px;
+        position:absolute;
+        top:0;
+    }
+    .project-image-small {
+        width:32px;
+        height:32px;
     }
     .project {
         background-color: rgb(247, 247, 247);
         height: 100px;
-        padding:10px;
+        overflow:hidden;
+        /* padding:10px; */
         border-radius: 8px;
-        display:block;
+        display:flex;
+        color:white;
         position:relative;
     }
     .project:hover {

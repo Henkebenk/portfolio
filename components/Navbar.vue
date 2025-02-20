@@ -10,6 +10,7 @@
 
 <style scoped>
     #navbar{
+        z-index: 10;
         width: 100%;
         margin:0 auto;
         display:flex;

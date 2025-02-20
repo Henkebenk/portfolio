@@ -82,12 +82,35 @@ h1{
   );
 }
 main {
-  max-width: 1000px;
+  max-width: 1280px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   margin:0 auto;
   align-items: center;
   gap:80px;
+  padding: 0 10px 0 10px;
+  transition:all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 800px) {
+  .techniques-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .techniques-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 300px) {
+  .techniques-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 </style>

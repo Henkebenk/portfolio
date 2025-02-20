@@ -8,7 +8,8 @@
 
 <template>
     <div class="hero">
-        <h1 class="hero-header">Header</h1>
+        <label class="hero-header">Hello, I'm <label style="font-weight: bold;">Henrik</label></label>
+        <label>Programming student at LiU</label>
         <div class="about">
             <div class="temp">
                 <Map stroke-width="1.5"/>
@@ -69,11 +70,14 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width:100vw;
+    max-width:100vw;
     height:100vh;
     text-align: center;
 }
 .hero-header {
     font-size: 48px;
+}
+h3 {
+    margin: 0;
 }
 </style>
