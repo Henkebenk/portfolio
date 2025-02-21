@@ -80,7 +80,7 @@
     }
     .technique{
         background-color: rgb(247, 247, 247);
-        height: 40px;
+        /* height: 40px; */
         padding:10px;
         border-radius: 8px;
         display:flex;

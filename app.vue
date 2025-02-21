@@ -97,23 +97,18 @@ main {
   justify-content: center;
   align-items: center;
 
-  padding:20px;
+  padding:0 20px;
   flex-grow: 1;
   align-items: center;
   gap:80px;
   transition:all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 1280px) {
-  /* main{
-    width:auto;
-  }
-  .content {
-    align-items: stretch;
-  } */
-}
 @media only screen and (max-width: 800px) {
   .techniques-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -121,7 +116,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
   .projects-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (max-width: 300px) {

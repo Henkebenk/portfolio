@@ -1,3 +1,7 @@
+<script setup>
+    import { GraduationCap } from 'lucide-vue-next';
+</script>
+
 <template>
     <div class="projects">
         <h1>Projects</h1>
@@ -8,7 +12,10 @@
                     <div>
                         <img src="../public/projects/gearguard.svg" class="project-image-small">
                     </div>
-                    <label>Gearguard</label>
+                    <div class="project-name">
+                        <label>Gearguard</label>
+                        <div title="Educational" style="height: 24px;"><GraduationCap stroke-width="1.5"/></div>
+                    </div>
                 </div>
             </div>
             <!-- <div class="project">
@@ -34,6 +41,13 @@
 </template>
 
 <style lang="css">
+    .project-name{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+        gap: 8px;
+    }
     .chips {
         display:flex;
         flex-direction: row;
@@ -71,11 +85,16 @@
     .project-image-large{
         height:100%;
         width:100%;
-        filter: blur(2px);
+        /* filter: blur(2px); */
+        -webkit-filter: blur(2px) brightness(0.8);
+    -moz-filter: blur(2px) brightness(0.8);
+    -ms-filter: blur(2px) brightness(0.8);
+    -o-filter: blur(2px) brightness(0.8);
+    filter: blur(2px) brightness(0.8);
         object-fit:cover;
         position:absolute;
         transform: scale(1.1);  
-        opacity: 0.75;
+        /* opacity: 0.75; */
         /* top:0; */
     }
     .project-image-small {
@@ -83,7 +102,7 @@
         height:32px;
     }
     .project {
-        background-color: rgb(0, 0, 0);
+        /* background-color: rgb(0, 0, 0); */
         height: 100px;
         overflow:hidden;
         /* padding:10px; */
