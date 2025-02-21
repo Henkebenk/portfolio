@@ -13,6 +13,6 @@
         text-align: center;
         padding:16px;
         color:rgb(210, 210, 210);
+        width:100%;
     }
-
 </style>

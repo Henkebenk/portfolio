@@ -21,6 +21,12 @@
                 <label>Flutter</label>
             </div>
             <div class="technique">
+                <div class="icon" style="background-color: #FF910042;">
+                    <img src="../public/icons/firebase.svg">
+                </div>
+                <label>Firebase</label>
+            </div>
+            <div class="technique">
                 <div class="icon" style="background-color: #8CC84B2B;">
                     <img src="../public/icons/node.svg">
                 </div>

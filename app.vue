@@ -46,6 +46,12 @@ export default {
 
 <style lang="css">
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+}
+footer {
+  width:100%;
+}
 body {
   color: #464646FF;
   margin:0;
@@ -55,9 +61,11 @@ body {
   scroll-behavior: smooth;
 }
 .content {
+  width:100%;
   display: flex;
   flex-direction: column;
   gap:80px;
+  align-items:center;
 }
 h1{
   margin:0;
@@ -82,20 +90,26 @@ h1{
   );
 }
 main {
-  width: 1000px;
+  max-width: 1000px;
+  width:100%;
   display:flex;
   flex-direction: column;
   justify-content: center;
-  margin:0 auto;
+  align-items: center;
+
+  padding:20px;
+  flex-grow: 1;
   align-items: center;
   gap:80px;
-  padding: 0 10px 0 10px;
   transition:all 0.3s ease-in-out;
 }
 @media only screen and (max-width: 1280px) {
-  main{
+  /* main{
     width:auto;
   }
+  .content {
+    align-items: stretch;
+  } */
 }
 @media only screen and (max-width: 800px) {
   .techniques-container {
